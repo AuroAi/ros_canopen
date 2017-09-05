@@ -199,7 +199,8 @@ struct _cout_wrapper{
     }
 };
 
-#define LOG(log) { boost::mutex::scoped_lock _cout_lock(_cout_wrapper::get_cout_mutex()); std::cout << log << std::endl; }
+// #define LOG(log) { boost::mutex::scoped_lock _cout_lock(_cout_wrapper::get_cout_mutex()); std::cout << log << std::endl; }
+#define LOG(log)
 
 
 #endif
