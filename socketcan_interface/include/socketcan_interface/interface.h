@@ -182,7 +182,14 @@ public:
     
     virtual bool doesLoopBack() const = 0;
     
-    virtual void run()  = 0;
+	virtual void run()  = 0;
+	
+	/**
+     * Name or path of device for the interface
+     *
+     * @return name or path of device
+     */
+	virtual std::string getDeviceName() = 0;
     
     virtual ~DriverInterface() {}
 };
