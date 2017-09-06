@@ -156,7 +156,10 @@ public:
     }
     int getInternalSocket() {
         return sc_;
-    }
+	}
+	std::string getDeviceName() {
+		return device_;
+	}
 protected:
     std::string device_;
     can_frame frame_;
